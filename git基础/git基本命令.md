@@ -2,6 +2,8 @@
 
 [TOC]
 
+
+
 ## git init [目录名称]
 
 将目标目初始化一个git仓库，如果不指定目录名称则把当前目录初始化。
@@ -65,4 +67,42 @@
 检出文件来代覆盖工作目录的文件。
 
 > 如果工作目录的内容和暂存区不同，则从暂存区检出。如果工作目录内容和暂存区相同，则从仓库中检出。
+
+## git remote [-v]
+
+查看远程仓库列表
+
+> 加上-v可以显示远程仓库的url
+
+## git remote add \<别名\> \<url\>
+
+添加一个远程仓库，并给这个远程仓库取一个别名
+
+## git fetch [remote-name]
+
+从远程仓库拉去所有你还没有的数据。但不会自动合并，需要手动合并。
+
+## git pull
+
+拉取当前分支跟踪的远程分支，并自动合并。
+
+> 默认情况下，`git clone` 命令会自动设置本地 master 分支跟踪克隆的远程仓库的 master 分支（或不管是什么名字的默认分支）。
+
+## git push [remote-name] [branch-name]
+
+将本地仓库中的内容推送到远程仓库
+
+## git remote show [remote-name]
+
+查看某一个远程仓库的具体信息
+
+## git remote rename [old-remote-name] [new-remote-name]
+
+修改远程仓库的别名
+
+## git remote rm  [remote-name]
+
+移除远程仓库
+
+
 
