@@ -1,1 +1,1 @@
-the project is my note for learning git
+the project is my note for learning git!
