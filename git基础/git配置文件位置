@@ -1,0 +1,23 @@
+### 配置文件位置
+git有三个配置文件：
+#### windows下
+- 系统配置文件（所有用户共享的）
+C:\Program Files\Git\mingw64\etc\gitconfig
+>C:\Program Files换成你的安装目录
+- 用户配置文件
+C:\Users\用户名\.gitconfig
+- 项目配置文件
+项目目录\.git\gitconfig
+
+#### linux 
+- 系统配置文件（所有用户共享）
+/etc/gitconfig
+- 用户配置文件
+~/.gitconfig
+- 项目配置文件
+项目目录\.git\gitconfig
+
+### 配置文件优先级
+项目配置>用户配置>系统配置
+>通常我们使用用户配置，既不会影响到别人，也不会每个项目都要重新配置
+
